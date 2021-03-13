@@ -1,0 +1,8 @@
+
+@mixin config-icon-colors($ids, $color) {
+    @each $i in $ids {
+        .#{$i} {
+            color: $color;
+        }
+    }
+}

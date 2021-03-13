@@ -1,0 +1,56 @@
+.info {
+  color: brown;
+}
+
+.tip {
+  color: brown;
+}
+
+button, button.home {
+  border: 1px solid black;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+body, html {
+  height: 100%;
+  margin: 1em auto;
+}
+
+body {
+  background-color: #cbe06d;
+}
+
+header {
+  background-color: #cbe06d;
+  text-align: center;
+}
+
+button {
+  color: #dfdf4f;
+  background-color: yellow;
+}
+
+button.home {
+  color: black;
+  font-size: 20px;
+}
+
+main section#todolist {
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+main section#todolist ul {
+  list-style-type: circle;
+  text-align: left;
+}
+
+secondary {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,54 @@
+@import 'utils/_mixins.scss';
+@import 'utils/_variables.scss';
+
+@include config-icon-colors('info' 'tip', brown);
+
+%button-simple {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    margin: auto;
+}
+
+body, html {
+    height: 100%;
+    margin: 1em auto;
+}
+
+body{
+    background-color: $primary;
+}
+
+header{
+    background-color: $primary;
+    text-align: center;
+}
+
+button{
+    @extend %button-simple;
+    color: $button_color;
+    background-color: $button_background_color;
+}
+
+button.home{
+    @extend %button-simple;
+    color:black;
+    font-size: 20px;  
+}
+
+main{
+    section#todolist {
+        background: #fff;
+        border-radius: 15px;
+        padding: 10px;
+
+        ul {
+            list-style-type: circle;
+            text-align: left;
+        }
+    }
+}
+
+secondary{
+    text-decoration: underline;
+}
