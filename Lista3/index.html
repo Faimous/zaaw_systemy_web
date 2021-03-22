@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">Brand</a>
+
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">About</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#quotes">Quotes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#carousel">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#faq">F.A.Q.</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+          </li>
+
+        </ul>
+        <!-- Left links -->
+
+        <!-- Search form -->
+        <form class="d-flex input-group w-auto">
+          <input type="search" class="form-control" placeholder="Type query" aria-label="Search" />
+          <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+            Search
+          </button>
+        </form>
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+</head>
+
+<body>
+  <!-- Start your project here-->
+  <!--Main Navigation-->
+  <header>
+  </header>
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about section-bg" style="margin-top: 4%">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <h3>Find Out More <span>About Us</span></h3>
+        <p>Nasze motto: miłego dnia</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-7" data-aos="zoom-out" data-aos-delay="100">
+          <img src="img/about.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-5 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up"
+          data-aos-delay="100">
+          <h3>Najważniejsze w życiu to odpowiednie miejsce do pracy.</h3>
+          <p class="font-italic">
+            Te zdjęcie to nasze biuro
+          </p>
+          <ul>
+            <li>
+              <i class="bx bx-store-alt"></i>
+              <div>
+                <h5>Sprzęt bardzo dużo kosztował</h5>
+                <p>Ale nie warto oszczędzać na stylówce, bo to daje więcej inwestorów</p>
+              </div>
+            </li>
+            <li>
+              <i class="bx bx-images"></i>
+              <div>
+                <h5>Mamy owocowe środy</h5>
+                <p>A nie jak każde korpo owocowe czwartki. Nie jesteśmy jak inni</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+  <section class="py-5" style="margin-top: 5%;">
+    <div class="container">
+      <div id="quotes" class="section-title">
+        <h2>Quotes</h2>
+      </br></br>
+      </div>
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+
+                <!-- CUSTOM BLOCKQUOTE -->
+                <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+                    <div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
+                    <p class="mb-0 mt-2 font-italic">"Tutaj powinien być cytat wielkiego człowieka"</p>
+                    <footer class="blockquote-footer pt-4 mt-4 border-top">Albert Einstein
+                    </footer>
+                </blockquote><!-- END -->
+
+            </div>
+        </div>
+    </div>
+</section>
+  <!--Main Navigation-->
+  <!--Main layout-->
+  <main>
+    <div class="col-md-5">
+      <canvas id="myChart"></canvas>
+    </div>
+  </main>
+  <!--Main layout-->
+  <hr class="my-5">
+  <h1 class="h1-responsive font-weight-bold" style="margin-left: 5%;">
+    Destinations chart
+  </h1>
+  <section id="chart" style="margin-bottom: 5%;">
+    <canvas id="canvas"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js%22%3E"></script>
+    <script src="js/chart.js"></script>
+  </section>
+  <!-- Carousel wrapper -->
+  <section id="carousel">
+  <h1 class="h1-responsive font-weight-bold" style="margin-left: 5%;">
+    Meet our team:
+  </h1>
+  <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel"
+    style="width: 80%; height: 10%; margin-left: 10%; margin-bottom: 4%;">
+    <!-- Controls -->
+    <div class="d-flex justify-content-center mb-4">
+      <button class="carousel-control-prev position-relative" type="button" data-mdb-target="#carouselMultiItemExample"
+        data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next position-relative" type="button" data-mdb-target="#carouselMultiItemExample"
+        data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Inner -->
+    <div class="carousel-inner py-4">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card">
+                <img src="img/osoba7.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Andrzej</h5>
+                  <p class="card-text">
+                    Siedzi i się ładnie uśmiecha. Tak naprawdę to wszystko co robi
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="card">
+                <img src="img/osoba8.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Adam</h5>
+                  <p class="card-text">
+                    Potrzebowaliśmy jakiegoś studenta do dofinansowania
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="card">
+                <img src="img/osoba9.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Robert</h5>
+                  <p class="card-text">
+                    Miał ładne CV. Co prawda nakłamał, ale dobrze wyglądało na tle innych
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-12">
+              <div class="card">
+                <img src="img/osoba4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Monika</h5>
+                  <p class="card-text">
+                    Dziewczyna ratownika. Nikt nie pamięta skąd tu się wzięła
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="card">
+                <img src="img/osoba5.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">CEO</h5>
+                  <p class="card-text">
+                    Jak już trafisz co naszego zespołu to trzymaj się od niego z daleka bo wylecisz jak Jacek
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="card">
+                <img src="img/osoba2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Andrzej</h5>
+                  <p class="card-text">
+                    Tak, kolejny Andrzej do ładnego uśmiechania się i robi to samo co drugi
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <div class="card">
+                <img src="img/osoba1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Maksymilian</h5>
+                  <p class="card-text">
+                    Najwięcej robi w naszym zespole. Jego głównym atutem jest długie imię
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+              <div class="card">
+                <img src="img/osoba3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Hubert</h5>
+                  <p class="card-text">
+                    Sportowiec, specjalista od grania w piłkę. Jest z nami od początku
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+              <div class="card">
+                <img src="img/osoba6.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Beatka</h5>
+                  <p class="card-text">
+                    Zostało trochę budżetu to zatrudniliśmy. Dzięki temu mamy 9 osób w zespole
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div></section>
+    <!-- Inner -->
+  </div>
+  <!-- Carousel wrapper -->
+  <!-- ======= Frequently Asked Questions Section ======= -->
+  <section id="faq" class="faq section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>F.A.Q</h2>
+        <h3>Frequently Asked <span>Questions</span></h3>
+        <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae
+          autem.</p>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne" style="background-color: rgb(210, 218, 226);">
+              <strong>Jak to jest być skrybą, dobrze?</strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-mdb-parent="#accordionExample">
+            <div class="accordion-body">
+              Moim zdaniem to nie ma tak, że dobrze albo że nie dobrze. Gdybym miał powiedzieć, co cenię w życiu
+              najbardziej, powiedziałbym, że ludzi. Ekhm... Ludzi, którzy podali mi pomocną dłoń, kiedy sobie nie
+              radziłem,
+              kiedy byłem sam. I co ciekawe, to właśnie przypadkowe spotkania wpływają na nasze życie. Chodzi o to, że
+              kiedy
+              wyznaje się pewne wartości, nawet pozornie uniwersalne, bywa, że nie znajduje się zrozumienia, które by
+              tak
+              rzec, które pomaga się nam rozwijać. Ja miałem szczęście, by tak rzec, ponieważ je znalazłem. I dziękuję
+              życiu. Dziękuję mu, życie to śpiew, życie to taniec, życie to miłość. Wielu ludzi pyta mnie o to samo, ale
+              jak
+              ty to robisz?, skąd czerpiesz tę radość? A ja odpowiadam, że to proste, to umiłowanie życia, to właśnie
+              ono
+              sprawia, że dzisiaj na przykład buduję maszyny, a jutro... kto wie, dlaczego by nie, oddam się pracy
+              społecznej i będę ot, choćby sadzić... znaczy... marchew.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+              data-mdb-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+              style="background-color:rgb(210, 218, 226);">
+              <strong>W którym roku człowiek postawi nogę na Marsie?</strong>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-mdb-parent="#accordionExample">
+            <div class="accordion-body">
+              Odpowiedź na te pytanie została zablokowana przez twój rząd.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+              data-mdb-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+              style="background-color: rgb(210, 218, 226);">
+              <strong>Co było pierwsze: jajko czy kura?</strong>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-mdb-parent="#accordionExample">
+            <div class="accordion-body">
+              Nie udzielamy odpowiedzi na te pytanie.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Frequently Asked Questions Section -->
+  </br></br>
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-6">
+          <div class="info-box mb-4">
+            <i class="bx bx-map"></i>
+            <h3>Our Address</h3>
+            <p>A108 Adam Street, New York, NY 535022</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="info-box  mb-4">
+            <i class="bx bx-envelope"></i>
+            <h3>Email Us</h3>
+            <p>123456@student.pwr.edu.pl</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="info-box  mb-4">
+            <i class="bx bx-phone-call"></i>
+            <h3>Call Us</h3>
+            <p>+48 123 456 789</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <script>
+          function myMap() {
+            var mapProp = {
+              center: new google.maps.LatLng(51.508742, -0.120850),
+              zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+          }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+        <div class="col-lg-6 ">
+          <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10020.15463496811!2d17.0625052!3d51.1077469!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb8f93f04c5c8d70f!2sPolitechnika%20Wroc%C5%82awska!5e0!3m2!1spl!2spl!4v1616435665081!5m2!1spl!2spl"></iframe>
+        </div>
+
+        <div class="col-lg-6">
+          </br></br>
+          <div class="form-row">
+            <div class="col form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+                data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="col form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+              data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" data-rule="required"
+              data-msg="Please write something for us" placeholder="Message"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+  <!--Footer-->
+  <footer>
+  </footer>
+  <!--Footer-->
+  </br></br></br>
+  <!-- End your project here-->
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+</body>
+
+</html>
