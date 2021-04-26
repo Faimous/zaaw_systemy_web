@@ -1,0 +1,22 @@
+type Query {
+    todos: [ToDoItem!]
+    todo(id: ID!): ToDoItem
+    users: [User!]
+    user(id: ID!): User
+    userrest(id: ID!): User
+}
+
+type ToDoItem{
+    user: User!
+    id: ID!
+    title: String!
+    completed: Boolean!
+}
+
+type User{
+    id: ID!
+    name: String!
+    email: String!
+    login: String!
+    todos: [ToDoItem!]!
+}
